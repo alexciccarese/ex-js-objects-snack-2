@@ -22,7 +22,11 @@ const chef = {
 	} 
 }
 
-const newChef = {...chef}
+const newChef = {...chef,
+	restaurant: {...chef.restaurant,
+		address: {...chef.restaurant.address}
+	}
+}
 
 console.log(chef);
 console.log(newChef);
